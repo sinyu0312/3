@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<title>sinyuzzz</title>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  h3{
+    text-align:center;
+    width: 100%;
+    padding:50px;
+    margin-bottom:0px;
+    margin-top:0px;
+    background-color:#A6ADBC;
+    ;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #A6ADBC;
+    width: 100%;
+    height: 35px
+    }
+  ul, li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size:12px;
+    text-align:center;
+  }
+  .txt{
+    text-align: center;
+    font-color: gray;
+    font-size: 10px;
+    margin-top: 50px
+  }
+  #main-menu > li {
+    float: left;
+    position: relative;
+    text-align:center;
+  }
+  #main-menu > li > a {
+    font-size:8px;
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+  #sub-menu {
+    position: absolute;
+    background-color:white;
+    border:1px rgba(212, 212, 212, 1) solid;
+    border-bottom:1px solid rgba(212, 212, 212, 1);
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.1s ease-in;
+  }
+  #sub-menu > li {
+    width:78px;
+    padding: 3px 0px;
+
+    border-bottom: 1px dashed rgba(212, 212, 212, 1);
+  }
+  #sub-menu > li:nth-child(4) {
+    border-bottom: none;
+  }
+  .sub-menu2 > li:nth-child(2) {
+    border-bottom: none;
+  }
+  #sub-menu > li > a {
+    color: gray;
+    font-size:6px;
+    text-decoration: none;
+  }
+  /* #main-memu > li:hover {
+    color: #131E34
+  } */
+  #main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #sub-menu > li > a:hover {
+    text-decoration: underline;
+  }
+/*  #sub-menu > li > a:hover #sub-menu > li {
+    color: navy;
+  }*/
+  .h4{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px
+  }
+/*  .h4:nth-child(2){
+    margin-top:100px;
+  }*/
+  .cont{
+    display: block;
+  }
+  .img{
+    margin-top: 20px;
+    display: block;
+    width: 230xp;
+    height: 230px
+  }
+  .txt{
+    font-size: 9px;
+    font-color: gray;
+    text-align: center;
+    margin-top:10px
+  }
+  .mark{
+    background: linear-gradient(to top, #D49892 4%, transparent 100%);
+  }
+</style>
+</head>
+
+<body>
+
+
+  <h3><a href=start.html style="color:#494A52">24.</a></h3>
+
+    <nav role="navigation">
+      <ul id="main-menu">
+        <li><a href="goal.html" style="color:#494A52"><strong><u>목표</u></strong></a></li>
+        <li><a href="sched.html">계획</a>
+          <ul id="sub-menu">
+            <li><a href="sched_1.html" aria-label="subemnu">1분기</a></li>
+            <li><a href="sched_2.html" aria-label="subemnu">2분기</a></li>
+            <li><a href="sched_3.html" aria-label="subemnu">3분기</a></li>
+            <li><a href="sched_4.html" aria-label="subemnu">4분기</a></li>
+          </ul>
+        </li>
+        <li><a href="prog.html">과정</a>
+          <ul id="sub-menu" class="sub-menu2">
+            <li><a href="prog_1.html" aria-label="subemnu">필기</a></li>
+            <li><a href="prog_2.html" aria-label="subemnu">실습</a></li>
+          </ul>
+        </li>
+        <li><a href="result.html">결과</a></li>
+      </ul>
+    </nav>
+
+<h4 class="h4"> 2022년을 살아가는 자세</h4>
+
+<div align="center">
+    <img src="ohi.jpeg" alt="오히려 좋아" width="200px" height="250px"></img>
+    <img class="img" src="worry.jpg"></img>
+</div><br><br>
+
+<h4 class="h4">진지한 2022년</h4>
+  <span class="cont">
+    <input type="checkbox" class="cont_list"><span class="txt mark">4-1 학점 4.0 넘기기</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt mark">지리학과 부전공</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt mark">자바스크립트 마스터</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt mark">QGIS로 프로젝트 완성해보기</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">공간정보 아카데미 수강 고민</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">매경 테스트 도전</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">블로그에 뉴스 스크랩하기</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">꾸준히 운동하기</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">이사하기</span><br>
+    <input type="checkbox" class="cont_list"><span class="txt">다이어리 꾸준하게 쓰기</span>
+  </span>
+
+<footer>
+  <br> </footer>
+</body>

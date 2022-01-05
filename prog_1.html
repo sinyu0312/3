@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<title>sinyuzzz</title>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  h3{
+    text-align:center;
+    width: 100%;
+    padding:50px;
+    margin-bottom:0px;
+    margin-top:0px;
+    background-color:#A6ADBC;
+    ;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #A6ADBC;
+    width: 100%;
+    height: 35px
+    }
+  ul, li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size:12px;
+    text-align:center;
+  }
+  .txt{
+    text-align: center;
+    font-color: gray;
+    font-size: 10px;
+    margin-top: 50px
+  }
+  #main-menu > li {
+    float: left;
+    position: relative;
+    text-align:center;
+  }
+  #main-menu > li > a {
+    font-size:8px;
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+  #sub-menu {
+    position: absolute;
+    background-color:white;
+    border:1px rgba(212, 212, 212, 1) solid;
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.1s ease-in;
+  }
+  #sub-menu > li {
+    width:78px;
+    padding: 3px 0px;
+    border-bottom: 1px dashed rgba(212, 212, 212, 1);
+  }
+  #sub-menu > li:nth-child(4) {
+    border-bottom: none;
+  }
+  #sub-menu > li > a {
+    color: gray;
+    font-size:6px;
+    text-decoration: none;
+  }
+  /* #main-memu > li:hover {
+    color: #131E34
+  } */
+  #main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #sub-menu > li > a:hover {
+    text-decoration: underline;
+  }
+/*  #sub-menu > li > a:hover #sub-menu > li {
+    color: navy;
+  }*/
+
+  #sub-menu > li > a:hover {
+    text-decoration: underline}
+.cont{
+font-size:10px;
+font-color: rgba(54, 54, 54, 1);
+margin-top: 30px;
+width:70%
+}
+</style>
+</head>
+
+<body>
+  <h3><a href=start.html style="color:#494A52">24.</a></h3>
+  <nav role="navigation">
+    <ul id="main-menu">
+      <li><a href="goal.html">목표</a></li>
+      <li><a href="sched.html">계획</a>
+        <ul id="sub-menu">
+          <li><a href="sched_1.html" aria-label="subemnu">1분기</a></li>
+          <li><a href="sched_2.html" aria-label="subemnu">2분기</a></li>
+          <li><a href="sched_3.html" aria-label="subemnu">3분기</a></li>
+          <li><a href="sched_4.html" aria-label="subemnu">4분기</a></li>
+        </ul>
+      </li>
+      <li><a href="prog.html"style="color:#131E34"><strong><u>과정</u></strong></a>
+        <ul id="sub-menu">
+          <li><a href="prog_1.html" aria-label="subemnu">필기</a></li>
+          <li><a href="prog_2.html" aria-label="subemnu">실습</a></li>
+        </ul>
+      <li><a href="result.html">결과</a></li>
+    </ul>
+  </nav>
+
+  <main class="cont">
+    <p>꺽새들의 이름: 태그</p>
+    <p> html 태그가 대장, 그 밑에 head태그, body태그가 부대장임 </p>
+    <p>id선택자와 class 선택자. id 선택자가 우선 그다음 클래스 선택자 그다음 태크 선택자. </p>
+    <br>id 선택자는 #으로 선택자 만들고  class는 .으로 만든다. </p>
+    <p>block eliment inline eliment </p>
+
+    <p>렉스 박스 항목을 배치하는 속성<br>
+
+  justify-content: 주축 방향의 정렬 방법<br>
+  align-items: 교차축 방향의 정렬 방법<br>
+  align-self: 교차축에 있는 개별 항목의 정렬 방법<br>
+  align-content: 교차축에서 여러 줄로 표시된 항목의 정렬 방법<br>
+  [출처] css-그리드 레이아웃, 플렉스박스(display, flex-direction, -wrap,-flow,justify-content, align-items,-self,-content|작성자 상이 </p>
+
+  <p>display의 속성값<br>
+
+  flex: 컨테이너 안의 플렉스 항목을 블록 레벨 요소로 배치<br>
+  inline-flex: 컨테이너 안의 플렉스 항목을 인라인 레벨 요소로 배치<br>
+  [출처] css-그리드 레이아웃, 플렉스박스(display, flex-direction, -wrap,-flow,justify-content, align-items,-self,-content|작성자 상이 </p>
+
+  <p>flex-direction의 속성값<br>
+  row: 주축-가로, 왼 →오 배치. #기본값<br>
+  row-reverse: 주축-가로, 오→왼 배치<br>
+  column: 주축-세로, 위→아래 배치<br>
+  column-reverse: 주축-세로, 아래→위 배치<br>
+  [출처] css-그리드 레이아웃, 플렉스박스(display, flex-direction, -wrap,-flow,justify-content, align-items,-self,-content|작성자 상이</p>
+  </main>
+
+
+  <div align="center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7127.233279261814!2d127.04793434299559!3d37.596492571662566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35634d9612236bc7%3A0xd1cbc40c602e436b!2z6rK97Z2s64yA7ZWZ6rWQIOyEnOyauOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1641259981429!5m2!1sko!2skr"
+  width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe> </div>
+</body>

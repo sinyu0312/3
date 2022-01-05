@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<title>sinyuzzz</title>
+<meta charset="utf-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  h3{
+    text-align:center;
+    width: 100%;
+    padding:50px;
+    margin-bottom:0px;
+    margin-top:0px;
+    background-color:#A6ADBC;
+    ;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #A6ADBC;
+    width: 100%;
+    height: 35px
+    }
+  ul, li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size:12px;
+    text-align:center;
+  }
+  .txt{
+    text-align: center;
+    font-color: gray;
+    font-size: 10px;
+    margin-top: 50px
+  }
+  #main-menu > li {
+    float: left;
+    position: relative;
+    text-align:center;
+  }
+  #main-menu > li > a {
+    font-size:8px;
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+  #sub-menu {
+    position: absolute;
+    background-color:white;
+    border:1px rgba(212, 212, 212, 1) solid;
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.1s ease-in;
+  }
+  #sub-menu > li {
+    width:78px;
+    padding: 3px 0px;
+    border-bottom: 1px dashed rgba(212, 212, 212, 1);
+  }
+  #sub-menu > li:nth-child(4) {
+    border-bottom: none;
+  }
+  #sub-menu > li > a {
+    color: gray;
+    font-size:6px;
+    text-decoration: none;
+  }
+  /* #main-memu > li:hover {
+    color: #131E34
+  } */
+  #main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #sub-menu > li > a:hover {
+    text-decoration: underline;
+  }
+/*  #sub-menu > li > a:hover #sub-menu > li {
+    color: navy;
+  }*/
+  .cont_title{
+    margin-top:30px;
+    font-size:12px;
+    color:rgba(54, 54, 54, 1);
+    text-align:center;
+  }
+  .cont{
+    display: block;
+    margin-top:30px;
+    font-color:rgba(54, 54, 54, 1);
+    font-size:10px
+  }
+  .cont_list{
+    font-size:10px;
+    color: rgba(54, 54, 54, 1);
+  }
+  /*cont 세로로도 배치해보기*/
+</style>
+</head>
+
+
+<body>
+  <h3><a href=start.html style="color:#494A52">24.</a></h3>
+  <nav role="navigation">
+    <ul id="main-menu">
+      <li><a href="goal.html">목표</a></li>
+      <li><a href="sched.html">계획</a>
+        <ul id="sub-menu">
+          <li><a href="sched_1.html" aria-label="subemnu">1분기</a></li>
+          <li><a href="sched_2.html" aria-label="subemnu">2분기</a></li>
+          <li><a href="sched_3.html" aria-label="subemnu">3분기</a></li>
+          <li><a href="sched_4.html" aria-label="subemnu">4분기</a></li>
+        </ul>
+      </li>
+      <li><a href="prog.html">과정</a>
+        <ul id="sub-menu">
+          <li><a href="prog_1.html" aria-label="subemnu">필기</a></li>
+          <li><a href="prog_2.html" aria-label="subemnu">실습</a></li>
+        </ul>
+      </li>
+      <li><a href="result.html" style="color:#131E34"><strong><u>결과</u></strong></a></li>
+    </ul>
+  </nav>
+
+  <main class="cont">
+준비 중...
+    </main>
+
+</body>
